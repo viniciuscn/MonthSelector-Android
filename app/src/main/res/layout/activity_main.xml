@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+    >
+
+    <br.nichele.selecionames.SelecionaMes
+        android:id="@+id/selecionaMes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/lbldatinicial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="data"
+        app:layout_constraintTop_toBottomOf="@+id/selecionaMes"
+        tools:layout_editor_absoluteX="71dp" />
+
+    <TextView
+        android:id="@+id/ano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ano"
+        app:layout_constraintTop_toBottomOf="@+id/lbldatinicial"
+        tools:layout_editor_absoluteX="71dp" />
+
+    <TextView
+        android:id="@+id/mes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mes"
+        app:layout_constraintTop_toBottomOf="@+id/ano"
+        tools:layout_editor_absoluteX="71dp" />
+
+    <TextView
+        android:id="@+id/dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dia"
+
+        app:layout_constraintTop_toBottomOf="@+id/mes"
+        tools:layout_editor_absoluteX="71dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
